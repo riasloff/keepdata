@@ -1,0 +1,15 @@
+
+listen_port: 8080
+
+log_file: "app.log"
+
+tg_api: "123"
+tg_bot_id: "123"
+
+track_dirs:
+  - "/tmp/secret_dir/"
+  - "/tmp/secret_dir2/"
+
+track_files:
+  - "/tmp/secret_file"
+  - "/tmp/secret_file2"

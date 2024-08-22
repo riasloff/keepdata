@@ -1,0 +1,27 @@
+{{ define "searchbar" }}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+  <h1 class="h2">Log Viewer</h1>
+  <div class="btn-toolbar mb-2 mb-md-0">
+    <div class="btn-group mr-2">
+      <form method="GET" action="/filter">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" class="form-control" id="user" name="user" placeholder="User">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="action" name="action" placeholder="Action Type">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="resource" name="resource" placeholder="Resource Type">
+          </div>
+        </div>
+        <div class="form-row py-1">
+          <div class="col-7">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">Filter Logs</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{{ end }}
